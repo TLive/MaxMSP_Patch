@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 176.0, 171.0, 901.0, 675.0 ],
+		"rect" : [ 147.0, 456.0, 901.0, 675.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,197 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-65",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 559.5, 499.0, 66.0, 24.0 ],
+					"style" : "",
+					"text" : "y value"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-66",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 484.5, 529.0, 73.0, 24.0 ],
+					"style" : "",
+					"text" : "x value"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-64",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 480.0, 427.0, 66.0, 51.0 ],
+					"presentation_rect" : [ 322.0, 431.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "Bottom platter sensor"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-63",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 254.5, 407.5, 71.0, 51.0 ],
+					"presentation_rect" : [ 150.0, 411.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "Top platter sensor"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-62",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 631.0, 420.5, 122.0, 37.0 ],
+					"presentation_rect" : [ 489.0, 446.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "Switch 1 on/off on TLive Box"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-61",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 659.0, 369.5, 150.0, 37.0 ],
+					"presentation_rect" : [ 513.0, 409.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "Switch 2 on/off on TLive Box"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-60",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 690.0, 305.5, 174.0, 51.0 ],
+					"presentation_rect" : [ 532.0, 376.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "checked if needle is down (must send turntable audio into TLive box)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-57",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 299.0, 474.0, 66.0, 24.0 ],
+					"presentation_rect" : [ 222.0, 450.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "y value"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-56",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 240.0, 499.0, 73.0, 24.0 ],
+					"presentation_rect" : [ 141.0, 451.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "x value"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-55",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 219.0, 599.5, 401.0, 64.0 ],
+					"presentation_rect" : [ 46.0, 413.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "raw tone arm pot data:\nif value is > 0 and < 50 then tone arm is moving toward platter center\nif value is > 50 then tone arm is moving away from center\nif value == 50 then tone arm is not moving"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-54",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 71.0, 306.5, 129.0, 51.0 ],
+					"style" : "",
+					"text" : "approximate current angle of tone arm"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-53",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 206.5, 160.0, 156.0, 47.0 ],
+					"style" : "",
+					"text" : "requires CNMAT Externals package for OSC-route object"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-52",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 215.0, 96.0, 150.0, 33.0 ],
+					"style" : "",
+					"text" : "Receive UDP packets on port 41235"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 463.0, 347.0, 24.0, 24.0 ],
+					"patching_rect" : [ 653.0, 319.0, 24.0, 24.0 ],
 					"presentation_rect" : [ 463.0, 346.0, 0.0, 0.0 ],
 					"style" : ""
 				}
@@ -58,7 +242,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 411.0, 347.0, 24.0, 24.0 ],
+					"patching_rect" : [ 623.0, 376.0, 24.0, 24.0 ],
 					"presentation_rect" : [ 411.0, 350.0, 0.0, 0.0 ],
 					"style" : ""
 				}
@@ -72,7 +256,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 361.0, 347.0, 24.0, 24.0 ],
+					"patching_rect" : [ 587.0, 427.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -85,7 +269,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 91.0, 311.0, 50.0, 22.0 ],
+					"patching_rect" : [ 157.0, 614.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -98,7 +282,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 35.0, 311.0, 50.0, 22.0 ],
+					"patching_rect" : [ 15.0, 321.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -111,7 +295,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 361.0, 408.0, 50.0, 22.0 ],
+					"patching_rect" : [ 496.0, 499.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -124,7 +308,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 297.0, 408.0, 50.0, 22.0 ],
+					"patching_rect" : [ 429.0, 529.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -137,7 +321,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 212.0, 408.0, 50.0, 22.0 ],
+					"patching_rect" : [ 240.0, 474.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -149,7 +333,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 250.0, 357.0, 69.0, 22.0 ],
+					"patching_rect" : [ 401.0, 448.0, 69.0, 22.0 ],
 					"style" : "",
 					"text" : "unpack 0 0"
 				}
@@ -175,7 +359,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 148.0, 357.0, 69.0, 22.0 ],
+					"patching_rect" : [ 180.0, 422.0, 69.0, 22.0 ],
 					"style" : "",
 					"text" : "unpack 0 0"
 				}
@@ -189,7 +373,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 148.0, 408.0, 50.0, 22.0 ],
+					"patching_rect" : [ 180.0, 499.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
